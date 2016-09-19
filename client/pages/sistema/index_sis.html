@@ -1,0 +1,56 @@
+<template name="index_sis">
+    <div class="container">
+        <div class="row first-row">
+            <div class="col-lg-12">
+                <h2>Bem-vindo(a) {{nome_user}}!
+                    <button type="button" class="btn btn-lg btn-primary position" id="nova-analise">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Nova Analise
+                    </button>
+                </h2>
+
+            </div>
+        </div>
+        <div class="row row">
+            <div class="col-lg-12">
+                <div class="card-box">
+
+                    <h4 class="text-dark  header-title m-t-0">Minhas Análises</h4>
+                    <hr>
+                    <p class="text-muted m-b-25 font-13"></p>
+
+                    <div class="table-responsive">
+                        {{#if esta_vazio}}
+                            <p class="text-center">Nenhuma análise cadastrada.</p>
+                        {{else}}
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th><b>Rede social</b></th>
+                                    <th><b>URL da rede social</b></th>
+                                    <th><b>Descrição da análise</b></th>
+                                    <th class="text-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    {{#each minhas_analises}}
+                                        <tr>
+                                            <td>{{rede_social}}</td>
+                                            <td>{{url}}</td>
+                                            <td>{{descricao}}</td>
+                                            <td>
+                                                <a href="{{pathFor "visu_analise"}}/{{_id}}" name="visualizar-analise">Visualizar</a>
+                                                <a href="{{pathFor "editar_analise"}}/{{_id}}" name="editar-analise">Editar</a>
+                                                <a href="#" name="excluir-analise">Excluir</a>
+                                            </td>
+                                        </tr>
+                                    {{/each}}
+                            </tbody>
+                        </table>
+                        {{/if}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

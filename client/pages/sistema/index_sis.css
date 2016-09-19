@@ -1,0 +1,10 @@
+.position{
+    margin: 0 auto;
+    float: right;
+}
+.first-row{
+    margin-top: 65px;
+}
+.same-line{
+    display:inline-block;
+}

@@ -1,0 +1,22 @@
+<template name="default">
+
+    <title>PryMeVis</title>
+    <div id="wrapper">
+        <div>
+
+            {{>header}}
+
+            <div id="page-wrapper">
+
+                    {{> Template.dynamic template=yield}}
+
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+    </div>
+
+    {{>footer}}
+
+
+</template>

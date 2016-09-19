@@ -1,0 +1,57 @@
+<template name="header">
+
+        <div class="navbar navbar-color navbar-fixed-top" id="topnav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-reorder"></span>
+                    </button>
+                    <a class="navbar-brand white" href="#">MDP</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        {{#if autenticado}}
+                            <li><a href="{{pathFor "index_sis"}}">Home</a></li>
+                        {{else }}
+                            <li><a href="{{pathFor "index"}}">Home</a></li>
+                        {{/if}}
+                        <li><a href="{{pathFor "modelo"}}">Modelo</a></li>
+                        <li><a href="{{pathFor "ferramenta"}}">Ferramenta</a></li>
+                        <li><a href="{{pathFor "sobre"}}">Sobre</a></li>
+
+                        {{#if autenticado}}
+                            <li><a id="logout-link" href="#">{{email_user}} <i class="fa fa-sign-out" aria-hidden="true"></i>  </a>
+                            </li>
+                        {{else }}
+                            <li><a href="#" data-toggle="modal" data-target="#login-modal">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> login
+                            </a>
+                            </li>
+                        {{/if}}
+
+                    </ul>
+                </div>
+                <!--/.navbar-collapse -->
+            </div>
+        </div>
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Bem-vindo(a) à PryMeVis!</h1>
+                    <p class="text-justify">Por favor, preencha suas informações de login abaixo para acessar ao sistema.</p>
+                    <form>
+                        <input type="text" id="user-login" placeholder="Email">
+                        <input type="password" id="pass-login" placeholder="Senha">
+                        <button type="submit" name="login" class="btn btn-primary btn-lg btn-block" value="Logar">Logar</button>
+                    </form>
+
+                    <div class="login-help bigger-margin">
+                        <a class="font-bigger" href="{{pathFor "cadastrar_usuario"}}"><b>Registre-se</b></a> |
+                        <a class="font-bigger" href="#">Esqueci minha senha</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</template>

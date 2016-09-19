@@ -1,0 +1,61 @@
+<template name="visu_analise">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <br/><br/>
+
+                <h2>Rede Social:
+                    <button type="button" class="btn btn-lg btn-primary position" id="criar-modelagem">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Criar Modelagem
+                    </button>
+                </h2>
+                <h3>{{analise.rede_social}}</h3>
+
+                <!--<label >ID: {{analise._id}}</label>-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <label>URL da rede social:</label>
+                                <span>{{analise.url}}</span>
+                                <br>
+                                <label>Descrição da análise:</label>
+                                <span>{{analise.descricao}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-dark  header-title m-t-0">Minhas Modelagens</h4>
+                <hr>
+
+                {{#if esta_vazio}}
+                    <p class="text-center">Não há modelagem cadastrada para essa rede social.</p>
+                {{else}}
+
+                    <div class="row">
+                        {{#each minhas_modelagens}}
+                        <div class="col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{{nome}}
+                                    <span class="pull-right">
+                                        <a href="#" name="visualizar-modelagem">Visualizar</a>
+                                        <a href="{{pathFor 'editar_modelagem'}}/{{analise._id}}/{{id}}" name="editar-modelagem">Editar</a>
+                                        <a href="#" name="excluir-modelagem">Excluir</a>
+                                    </span>
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                {{/if}}
+
+            </div>
+        </div>
+    </div>
+</template>
