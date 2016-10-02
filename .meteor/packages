@@ -21,7 +21,7 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 accounts-ui
 accounts-password
-msavin:mongol
+#msavin:mongol
 twbs:bootstrap
 kadira:blaze-layout
 arillo:flow-router-helpers
