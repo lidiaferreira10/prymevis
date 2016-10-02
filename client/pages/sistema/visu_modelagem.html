@@ -1,8 +1,47 @@
 <template name="visu_modelagem">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+
+        {{#if estaCarregando }}
+            {{>load}}
+        {{/if}}
+
+        <div id="colmeia" class="row first-row" style="visibility:{{display}}">
             <div class="col-lg-12">
+
+                <div class="col-lg-12">
+                    <h3>Rede Social: {{rede_social}}</h3>
+                </div>
+                <div class="col-lg-8">
+                    <p class="inline-block">Nome da Comunicação:
+                        <input id="nome-modelagem" class="long" value="{{modelagem.nome}}"/>
+                    </p>
+                    <div class="row">
+                        <div id="container-honeycomb">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div id="container-controls" class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="mdl-data-table__cell--non-numeric">Dimensão</th>
+                                <th>Controle</th>
+                                <th>Valor</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <button id="voltar-modelagem" type="button" class="btn btn-primary btn-lg pull-right margem-inferior">Voltar</button>
             </div>
         </div>
+
     </div>
 </template>

@@ -2,6 +2,7 @@
  * @author Diego Barros
  */
 
+return;
 d3= require("d3");
 
 setTimeout(function () {

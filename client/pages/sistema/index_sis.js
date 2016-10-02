@@ -9,6 +9,7 @@ let template;
 Template.index_sis.onCreated(function () {
 
     template = Template.instance();
+    console.log(Meteor.userId());
 });
 
 Template.index_sis.events({
@@ -37,9 +38,10 @@ Template.index_sis.helpers({
     'minhas_analises': function () {
         let analises = Analises.find({}).fetch();
         console.log(analises);
-        return analises;
+        return analises.filter(analise => analise.owner === Meteor.userId());
+
     },
     'esta_vazio': function(){
-       return Analises.find().fetch().length === 0;
+       return Analises.find().fetch().filter(analise => analise.owner === Meteor.userId()).length === 0;
     }
 });

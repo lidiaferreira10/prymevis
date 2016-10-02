@@ -58,7 +58,12 @@ FlowRouter.route('/cadastrar_usuario', {
     },
     name: "cadastrar_usuario" // optional
 });
-
+FlowRouter.route('/redefinir_senha', {
+    action: function() {
+        BlazeLayout.render('default', { yield: 'redefinir_senha'});
+    },
+    name: "redefinir_senha" // optional
+});
 
 
 /** GRUPOS AUTENTICADOS **/
@@ -101,6 +106,13 @@ RotasAutenticadas.route('/editar_modelagem/:_id_analise/:_id_modelagem', {
         BlazeLayout.render('default', { yield: 'editar_modelagem'});
     },
     name: "editar_modelagem" // optional
+});
+
+RotasAutenticadas.route('/visu_modelagem/:_id_analise/:_id_modelagem', {
+    action: function() {
+        BlazeLayout.render('default', { yield: 'visu_modelagem'});
+    },
+    name: "visu_modelagem" // optional
 });
 
 RotasAutenticadas.route('/editar_analise/:_id', {

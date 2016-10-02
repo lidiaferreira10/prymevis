@@ -147,6 +147,13 @@
         <item url="file://$USER_HOME$/.meteor/packages/caching-compiler/1.0.6/npm/node_modules/lru-cache/lib/lru-cache.js" />
         <item url="file://$USER_HOME$/.meteor/packages/caching-compiler/1.0.6/npm/node_modules/async/support/sync-package-managers.js" />
         <item url="file://$USER_HOME$/.meteor/packages/caching-compiler/1.0.6/npm/node_modules/async/lib/async.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/page/page.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/page/index.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/dist/qs.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/parse.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/utils.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/stringify.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/index.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ecmascript-runtime/0.3.14/npm/node_modules/core-js/shim.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ecmascript-runtime/0.3.14/npm/node_modules/core-js/Gruntfile.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ecmascript-runtime/0.3.14/npm/node_modules/core-js/index.js" />
@@ -5096,6 +5103,13 @@
       <root url="file://$USER_HOME$/.meteor/packages/caching-compiler/1.0.6/npm/node_modules/lru-cache/lib/lru-cache.js" />
       <root url="file://$USER_HOME$/.meteor/packages/caching-compiler/1.0.6/npm/node_modules/async/support/sync-package-managers.js" />
       <root url="file://$USER_HOME$/.meteor/packages/caching-compiler/1.0.6/npm/node_modules/async/lib/async.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/page/page.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/page/index.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/dist/qs.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/parse.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/utils.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/stringify.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/npm/node_modules/qs/lib/index.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ecmascript-runtime/0.3.14/npm/node_modules/core-js/shim.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ecmascript-runtime/0.3.14/npm/node_modules/core-js/Gruntfile.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ecmascript-runtime/0.3.14/npm/node_modules/core-js/index.js" />

@@ -12,9 +12,21 @@ Template.criar_modelagem.onCreated(function () {
     template.id = FlowRouter.getParam('_id');
     template.analise = new ReactiveVar();
 
+    template.estaCarregando = new ReactiveVar(true);
+
     template.autorun(function () {
         let analise = Analises.findOne({_id: template.id});
         template.analise.set(analise);
+    });
+
+});
+
+Template.criar_modelagem.onRendered(function () {
+    $(document).ready(function () {
+        criarColmeia();
+        setTimeout(function () {
+            template.estaCarregando.set(false);
+        }, 2000);
     });
 });
 
@@ -27,6 +39,16 @@ Template.criar_modelagem.helpers({
             return "to pronto nao jovem";
         }else{
             return redeSocial_obj.rede_social;
+        }
+    },
+    'estaCarregando': function () {
+        return template.estaCarregando.get();
+    },
+    'display': function () {
+        if(template.estaCarregando.get() ){
+            return "hidden;";
+        }else{
+            return "visible";
         }
     }
 });
@@ -72,5 +94,8 @@ Template.criar_modelagem.events({
                 FlowRouter.go("/visu_analise/"+id);
             }
         });
-    }
+    },
+    'click #cancelar-modelagem': function () {
+        FlowRouter.go("/visu_analise/" + template.id);
+    },
 });

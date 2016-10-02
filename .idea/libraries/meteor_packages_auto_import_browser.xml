@@ -13,6 +13,15 @@
         <item url="file://$USER_HOME$/.meteor/packages/modules/0.7.6/web.browser/buffer.js" />
         <item url="file://$USER_HOME$/.meteor/packages/promise/0.8.4/web.browser/promise-tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/modules/0.7.6/web.browser/server.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/test/common/fast_render_route.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/test/client/triggers.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/test/client/_helpers.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/route.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/modules.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/triggers.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/_init.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/group.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/router.js" />
         <item url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.4.0_1/web.browser/upstream/css/font-awesome.css" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/deprecated.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random_tests.js" />
@@ -46,6 +55,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/ddp-client/1.2.9/web.browser/random_stream.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ddp-client/1.2.9/web.browser/sockjs-0.3.4.js" />
         <item url="file://$USER_HOME$/.meteor/packages/srp/1.0.9/web.browser/srp.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/lib/router.js" />
         <item url="file://$USER_HOME$/.meteor/packages/srp/1.0.9/web.browser/biginteger.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/templating-tools.js" />
         <item url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/compile-tags-with-spacebars.js" />
@@ -211,6 +221,15 @@
       <root url="file://$USER_HOME$/.meteor/packages/modules/0.7.6/web.browser/buffer.js" />
       <root url="file://$USER_HOME$/.meteor/packages/promise/0.8.4/web.browser/promise-tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/modules/0.7.6/web.browser/server.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/test/common/fast_render_route.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/test/client/triggers.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/test/client/_helpers.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/route.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/modules.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/triggers.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/_init.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/group.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/router.js" />
       <root url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.4.0_1/web.browser/upstream/css/font-awesome.css" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/deprecated.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.10/web.browser/random_tests.js" />
@@ -244,6 +263,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/ddp-client/1.2.9/web.browser/random_stream.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ddp-client/1.2.9/web.browser/sockjs-0.3.4.js" />
       <root url="file://$USER_HOME$/.meteor/packages/srp/1.0.9/web.browser/srp.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/lib/router.js" />
       <root url="file://$USER_HOME$/.meteor/packages/srp/1.0.9/web.browser/biginteger.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/templating-tools.js" />
       <root url="file://$USER_HOME$/.meteor/packages/templating-tools/1.0.4/web.browser/compile-tags-with-spacebars.js" />

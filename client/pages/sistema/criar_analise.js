@@ -27,7 +27,7 @@ Template.criar_analise.events({
 
         })
     },
-    'click #cancelar-analise': function (event) {
-      return FlowRouter.go("/index_sis/");
+    'click #cancelar-analise': function () {
+       FlowRouter.go("/index_sis/");
     },
 });

@@ -16,6 +16,7 @@ Template.cadastrar_usuario.events({
 
         let usuario_obj = {nome:nome, sobrenome:sobrenome, email:email, senha:senha};
 
+
         Meteor.call('usuarios.adicionarUsuario', usuario_obj, function(error){
             if(error){
                 Bert.alert(error.reason, 'danger', "growl-top-right");
@@ -32,5 +33,8 @@ Template.cadastrar_usuario.events({
                 });
             }
         } );
-    }
+    },
+    'click #cancelar-cadastro': function () {
+        FlowRouter.go("index");
+    },
 });
