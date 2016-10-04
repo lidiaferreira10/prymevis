@@ -19,8 +19,10 @@
                         <li><a href="{{pathFor "ferramenta"}}">Ferramenta</a></li>
                         <li><a href="{{pathFor "sobre"}}">Sobre</a></li>
 
+                        <!--href="#">{email_user}}-->
+
                         {{#if autenticado}}
-                            <li><a id="logout-link" href="#">{{email_user}} <i class="fa fa-sign-out" aria-hidden="true"></i>  </a>
+                            <li><a id="logout-link"> Deslogar <i class="fa fa-sign-out" aria-hidden="true"></i>  </a>
                             </li>
                         {{else }}
                             <li><a href="#" data-toggle="modal" data-target="#login-modal">
